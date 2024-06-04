@@ -4,9 +4,11 @@
 import sched
 import time 
 
-def schedule_function( time, func, *args ):
-    scheduler = sched.scheduler(time.time(), time.sleep() )
-    scheduler.enter(time,func,*args)
+def schedule_function( timegiven, func, *args ):
+    scheduler = sched.scheduler(time.time, time.sleep)
+    scheduler.enterabs(timegiven ,1,func,argument=args);
+    scheduler.run()
+    return None
 
-
+schedule_function(time.time() + 1, print, 'Howdy!','How are you?')
 
