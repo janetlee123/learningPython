@@ -7,10 +7,10 @@
 # https://www.freecodecamp.org/news/dataframe-to-csv-how-to-save-pandas-dataframes-by-exporting/#:~:text=to_csv()%20Method-,The%20.,format%20for%20storing%20tabular%20data.
 
 import pandas as pd 
-x=0
-y=1
 
 def mergecsv(listoffiles, outputfile):
+    x=0
+    y=1
     #merge dataframes so that keys merge
     while y <= len(listoffiles):
         #open dataframes from listoffiles
@@ -24,4 +24,5 @@ def mergecsv(listoffiles, outputfile):
     merged_df.to_csv(outputfile, index=True)
 
 
-mergecsv(["class1.csv","class2.csv"],"outputclass.csv")
+#Possible call for the function 
+#mergecsv(["class1.csv","class2.csv"],"outputclass.csv")
