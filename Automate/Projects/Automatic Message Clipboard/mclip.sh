@@ -1,4 +1,3 @@
 #!/bin/bash 
-$0 $1 $2 
-
+python mclip.py $0
 
