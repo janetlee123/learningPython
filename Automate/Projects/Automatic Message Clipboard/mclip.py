@@ -11,7 +11,7 @@ import sys, pyperclip
 
 
 if len(sys.argv) < 2: 
-    print('Usage: python mclip.py [keyphrase] - copy phrase text')
+    print(f'Usage: python mclip.py [keyphrase] - copy phrase text')
     sys.exit()
 
 keyphrase = sys.argv[1] # first command line arg is the keyphrase 
