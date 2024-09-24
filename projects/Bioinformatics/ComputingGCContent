@@ -1,0 +1,4 @@
+#Given: at most 10 DNA strings of FASTA format (max 1kbp each)
+#Returns: ID of strong with highest GC content, followed by GC-content of string
+#error of 0.001 
+
